@@ -94,12 +94,12 @@ That should be enough to get you up and running!
     - The **_styles** partial:
       - Includes the application-wide CSS file (*app.css*), compiled by **Laravel Mix**
       - Checks for and loads any custom CSS that should be included *for the specific view being rendered*
-      - These styles are included just before the *</head>* tag
+      - These styles are included just before the closing `</head>` tag
     - The **_js** partial:
       - Includes the application-wide JS file (*app.js*), compiled by **NPM**
       - Checks for and includes any custom JS that should be included *for the specific view being rendered*
       - Checks for and includes any JS scripts that should be loaded *for the specific view being rendered*
-      - The JS is included just before the *</body>* tag
+      - The JS is included just before the closing `</body>` tag
     - The **AppServiceProvider** includes a custom convenience function **_makeViewNamesAvailableGlobally()**, which:
       - Leverages a global view composer to share variables containing information about the *current view name* to all views
      * This setup allows for automatic inclusion of these JS/CSS view partials based on file name / location by:
